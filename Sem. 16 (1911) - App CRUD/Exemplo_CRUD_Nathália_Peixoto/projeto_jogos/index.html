@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes CRUD</title>
+    <style>
+	
+		body {
+			font-family: sans-serif;
+		}
+		label, input.botao {
+			display: block;
+			margin-top: 10px;
+		}
+		
+		div {
+			margin: 10px;
+			width: 200px;
+			padding: 2px 10px 15px 10px;
+			background-color: powderblue;
+			border-radius: 10%;
+		}
+		
+    </style>
+</head>
+
+<body>
+	<h1>Testes CRUD</h1>
+	
+	<div>
+		<h2>CREATE</h2>
+		<form action="create.php" method="post">
+			<label for="nome">Nome: </label>
+			<input type="text" id="nome" name="nome"/>
+			<label for="tel">Telefone: </label>
+			<input type="tel" id="cel" name="cel"/>
+			<label for="email">E-mail: </label>
+			<input type="email" id="email" name="email"/>
+			<input type="submit" class="botao" name="submit" value="Inserir"/>
+		</form>
+	</div>
+	
+	<div>
+		<h2>READ</h2>
+		<a href="read.php">Listar</a>
+	</div>
+	
+	<div>
+		<h2>UPDATE</h2>
+		<form action="update.php" method="post">
+			<label for="pkey">ID: </label>
+			<input type="number" id="pkey" name="id"/>
+			<label for="nome">Nome: </label>
+			<input type="text" id="nome" name="nome"/>
+			<label for="tel">Telefone: </label>
+			<input type="tel" id="cel" name="cel"/>
+			<label for="email">E-mail: </label>
+			<input type="email" id="email" name="email"/>
+			<input type="submit" class="botao" name="submit" value="Atualizar"/>
+		</form>
+	</div>
+	
+	<div>
+		<h2>DELETE</h2>
+		<form action="delete.php" method="post">
+			<label for="pkey">ID: </label>
+			<input type="number" id="pkey" name="id"/>
+			<input type="submit" class="botao" name="submit" value="Deletar"/>
+		</form>
+	</div>
+	
+</body>
+
+</html>

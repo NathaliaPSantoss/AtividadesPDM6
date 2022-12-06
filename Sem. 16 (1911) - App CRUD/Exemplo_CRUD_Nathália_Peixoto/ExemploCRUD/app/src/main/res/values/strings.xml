@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Exemplo CRUD</string>
+    <string name="nome">Nome completo</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Digite seu e-mail</string>
+    <string name="novo">Novo</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="id">ID</string>
+</resources>
