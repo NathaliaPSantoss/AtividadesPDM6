@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/red1"
+    android:gravity="center">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/red2"
+        android:text="@string/facaSeuPedido"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="15dp">
+
+        <TextView
+
+            android:id="@+id/tv_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/red2"
+            android:text="@string/item" />
+
+        <TextView
+            android:id="@+id/tv_preco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textColor="@color/red2"
+            android:text="@string/preco" />
+
+        <TextView
+            android:id="@+id/tv_quantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textColor="@color/red2"
+            android:text="@string/quantidade" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/cafe"/>
+
+        <CheckBox
+            android:id="@+id/cb_cafe"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/cafe" />
+
+        <TextView
+            android:id="@+id/tv_precocafe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:text="@string/preco_cafe" />
+
+        <Button
+            android:id="@+id/btnDecreaseCafe"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/subtracao"
+            android:onClick="fazerPedido"/>
+
+        <TextView
+            android:id="@+id/tv_qtdecafe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="13dp"
+            android:text="@string/qtde_cafe" />
+
+        <Button
+            android:id="@+id/btnIncreaseCafe"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/soma"
+            android:onClick="fazerPedido"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/coca"/>
+
+        <CheckBox
+            android:id="@+id/cb_coca"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/coca" />
+
+        <TextView
+            android:id="@+id/tv_precococa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:text="@string/preco_coca" />
+
+        <Button
+            android:id="@+id/btnDecreaseCoca"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/subtracao"
+            android:onClick="fazerPedido"/>
+
+        <TextView
+            android:id="@+id/tv_qtdecoca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="13dp"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btnIncreaseCoca"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/soma"
+            android:onClick="fazerPedido"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/burguer"/>
+
+        <CheckBox
+            android:id="@+id/cb_burguer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="20sp"
+            android:text="@string/burguer" />
+
+        <TextView
+            android:id="@+id/tv_precoburguer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:text="@string/preco_burguer" />
+
+        <Button
+            android:id="@+id/btnDecreaseBurguer"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/subtracao"
+            android:onClick="fazerPedido"/>
+
+        <TextView
+            android:id="@+id/tv_qtdeburguer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="13dp"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btnIncreaseBurguer"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/soma"
+            android:onClick="fazerPedido"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/pastel"/>
+
+        <CheckBox
+            android:id="@+id/cb_pastel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="20sp"
+            android:text="@string/pastel" />
+
+        <TextView
+            android:id="@+id/tv_precopastel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="20sp"
+            android:text="@string/preco_pastel" />
+
+        <Button
+            android:id="@+id/btnDecreasePastel"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/subtracao"
+            android:onClick="fazerPedido"/>
+
+        <TextView
+            android:id="@+id/tv_qtdepastel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="13dp"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btnIncreasePastel"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/soma"
+            android:onClick="fazerPedido"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red2"
+            android:textSize="20sp"
+            android:text="@string/pagamento" />
+
+        <Spinner
+            android:id="@+id/spn_valores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:entries="@array/spinner_itens"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/confirmar"
+        android:onClick="fazerPedido"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_marcado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"/>
+
+</LinearLayout>

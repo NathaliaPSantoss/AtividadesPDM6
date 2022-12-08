@@ -1,0 +1,118 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <View
+            android:id="@+id/tv_esquerda_cima"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/tv_centro"
+            android:background="@color/teal_700" />
+
+        <View
+            android:id="@+id/direita_cima"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/tv_centro"
+            android:background="@color/teal_700" />
+
+        <View
+            android:id="@+id/tv_centro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_esquerda_cima"
+            android:layout_centerInParent="true"
+            android:background="@color/teal_700" />
+
+        <View
+            android:id="@+id/tv_esquerda_baixo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_centro"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_centro"
+            android:background="@color/teal_700" />
+
+        <View
+            android:id="@+id/direita_baixo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_centro"
+            android:layout_toRightOf="@+id/tv_centro"
+            android:background="@color/teal_700" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Login"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tv_login"
+            android:ems="7" />
+
+        <TextView
+            android:id="@+id/tv_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/Senha"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_login"
+            android:layout_toRightOf="@+id/tv_senha"
+            android:ems="7" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_senha"
+            android:layout_marginRight="15dp"
+            android:text="@string/Login" />
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_senha"
+            android:layout_toRightOf="@+id/btn_login"
+            android:text="@string/Voltar" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

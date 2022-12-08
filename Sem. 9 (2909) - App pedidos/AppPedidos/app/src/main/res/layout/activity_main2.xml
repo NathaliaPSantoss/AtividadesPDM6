@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tv_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/black"
+        android:text="@string/confirmar"/>
+    <TextView
+        android:id="@+id/tv_recebido"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="primeiraTela"
+            android:backgroundTint="@color/red"
+            android:text="@string/voltar"/>
+
+        <Button
+            android:id="@+id/btn_criar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="PrepPed"
+            android:backgroundTint="@color/red"
+            android:text="@string/sim"/>
+    </LinearLayout>
+
+</LinearLayout>

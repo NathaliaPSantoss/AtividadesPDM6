@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">componentes</string>
+    <string name="spinner">Viagens.com</string>
+    <string-array name="spinner_itens">
+        <item>Selecione...</item>
+        <item>Curitiba</item>
+        <item>Rio de Janeiro</item>
+        <item>Natal</item>
+        <item>Gramado</item>
+
+    </string-array>
+    <string name="limpa">Limpar</string>
+    <string name="confirma">Confirmar</string>
+</resources>

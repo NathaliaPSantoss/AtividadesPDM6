@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AppPesos</string>
+
+    <string name="facaSeuPedido">Faça seu Pedido!</string>
+    <string name="item">item</string>
+    <string name="preco">Preço(R$)</string>
+    <string name="quantidade">Quantidade</string>
+
+    <string name="cafe">Café</string>
+    <string name="preco_cafe">2,50</string>
+    <string name="qtde_cafe">0</string>
+
+    <string name="coca">Coca</string>
+    <string name="preco_coca">5,00</string>
+    <string name="qtde_coca">0</string>
+
+    <string name="burguer">Burguer</string>
+    <string name="preco_burguer">6,00</string>
+    <string name="qtde_burguer">0</string>
+
+    <string name="pastel">Pastel</string>
+    <string name="preco_pastel">4,50</string>
+    <string name="qtde_pastel">0</string>
+
+    <string name="teste">Teste</string>
+    <string name="preco_teste">9,50</string>
+    <string name="qtde_teste">0</string>
+
+    <string name="soma">+</string>
+    <string name="subtracao">-</string>
+
+    <string name="pagamento">Pagamento</string>
+    <string-array name="spinner_itens">
+        <item>Selecione...</item>
+        <item>PIX</item>
+        <item>Débito</item>
+        <item>Crédito</item>
+        <item>Dinheiro</item>
+    </string-array>
+
+    <string name="confirmar">Confirmar</string>
+    <string name="voltar">Voltar</string>
+    <string name="sim">Sim</string>
+    <string name="finalizado">Pedido finalizado com sucesso! Agradecemos a preferência!</string>
+    <string name="resumo">Ver resumo do pedido</string>
+    <string name="zero">0</string>
+
+</resources>
